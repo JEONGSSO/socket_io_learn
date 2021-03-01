@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style/reset.css" />
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./src/jasmine/lib/jasmine-2.6.4/jasmine_favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./src/jasmine/lib/jasmine-2.6.4/jasmine.css"
+    />
+
+    <script
+      type="text/javascript"
+      src="./src/jasmine/lib/jasmine-2.6.4/jasmine.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./src/jasmine/lib/jasmine-2.6.4/jasmine-html.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="./src/jasmine/lib/jasmine-2.6.4/boot.js"
+    ></script>
+    <title>zzzz</title>
+  </head>
+  <body>
+    <main class="container">
+      <h1>Chat List</h1>
+      <ul class="roomList">
+        <li>
+          <a href="#1">
+            <span>굿</span>
+            <span>방 제목1</span>
+          </a>
+        </li>
+        <li>
+          <a href="#2">
+            <span>굿굿</span>
+            <span>방 제목2</span>
+          </a>
+        </li>
+        <li>
+          <a href="#3">
+            <span>굿굿굿</span>
+            <span>방 제목2</span>
+          </a>
+        </li>
+      </ul>
+    </main>
+    <div class="modalContainer">
+      <div class="modalHeader">
+        <h3>Chat Room</h3>
+        <span class="roomNumber"></span>
+        <button class="closeBtn">X</button>
+      </div>
+      <ul class="chatList"></ul>
+      <div class="chatInput">
+        <input type="text" value="" placeholder="텍스트를 입력해주세요" />
+        <button>전송</button>
+      </div>
+    </div>
+    <div class="shadow"></div>
+  </body>
+  <script
+    src="https://cdn.socket.io/3.1.1/socket.io.min.js"
+    integrity="sha384-gDaozqUvc4HTgo8iZjwth73C6dDDeOJsAgpxBcMpZYztUfjHXpzrpdrHRdVp8ySO"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./src/socket.io.js"></script>
+  <script src="./src/index.js"></script>
+</html>
